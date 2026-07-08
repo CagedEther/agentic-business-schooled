@@ -141,51 +141,6 @@ npm run trigger
 
 A good local test proves that the task reaches the handler and returns the expected output artifact. If it fails because a model key is missing, report that clearly and do not hide the failure.
 
-### 6. Explain A2A Without Overclaiming
-
-Describe A2A as the broader interoperability layer for agent-to-agent collaboration. A2A is useful because agents may be built in different frameworks, hosted by different companies, or managed by different teams. The business value is that each agent can still publish what it can do, accept a task, exchange messages, and return artifacts without exposing its internal memory or tools. For broader context, see the [A2A project](https://github.com/a2aproject/A2A) and Google's [A2A announcement](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/).
-
-Do not claim that every platform or every Blocks agent automatically implements A2A unless that has been verified. It is safer to say:
-
-- Blocks shows the practical value of publishing an agent as a callable capability.
-- A2A points to the broader future where agents can collaborate across build environments.
-- The same design discipline matters in both cases: clear capability metadata, stable input and output schemas, authentication, task state, and responsible data boundaries.
-
-### 7. Write The Education Article
-
-Use a business-professional tone. Define technical terms the first time they appear:
-
-- Agent: a software helper that receives a task, uses tools or models, and returns a useful result.
-- API key: a private password-like credential that lets software use a service.
-- SDK: a software package builders install so code can talk to a platform.
-- CLI: a command-line tool used to set up, check, register, or run a project.
-- Hosted worker: a process that stays online so other systems can call the agent.
-
-Include these required sections:
-
-- `Quick Read`
-- `What you are building`
-- `What the tools do`
-- `What the skill file gives you`
-- `Before you start`
-- `The basic workflow`
-- `Starter prompt`
-- `What a good result looks like`
-- `Use it responsibly`
-- `What to try next`
-
-Include the raw GitHub URL for this skill file in the article. Include the Blocks app URL for the example agent if the name is known. If the agent is private or publication status is uncertain, say that access may require confirmation.
-
-### 8. Close With The CTA
-
-End the article with this call to action:
-
-```text
-https://agentic.business-schooled.com/quick-start/
-```
-
-Make the CTA feel like the next learning step, not a generic marketing button.
-
 ## Outputs
 
 - A reusable skill-style Markdown file that tells another LLM how to reproduce the explanation and example.
